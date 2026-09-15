@@ -1,0 +1,18 @@
+[project]
+name = "sightline"
+version = "0.1.0"
+description = "Count people and vehicles crossing a tripwire in camera footage, built on Roboflow inference, supervision, and trackers."
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "inference==1.6.0",
+    "supervision==0.29.1",
+    "trackers==2.4.0",
+    "numpy==2.3.5",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]

@@ -1,0 +1,4 @@
+inference==1.6.0
+supervision==0.29.1
+trackers==2.4.0
+numpy==2.3.5
