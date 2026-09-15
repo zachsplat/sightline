@@ -1,0 +1,16 @@
+frame,time_s,tracker_id,class,direction
+7,0.28,2,person,out
+41,1.64,1,person,out
+43,1.72,4,person,in
+64,2.56,9,person,in
+91,3.64,18,person,out
+110,4.4,3,person,in
+131,5.24,12,person,out
+158,6.32,11,person,in
+167,6.68,14,person,out
+169,6.76,15,person,in
+178,7.12,20,person,out
+197,7.88,17,person,in
+207,8.28,22,person,out
+284,11.36,21,person,out
+318,12.72,26,person,in
