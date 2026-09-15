@@ -116,6 +116,15 @@ So `center` is the default. `corners` is the conservative choice if false
 positives cost more than misses; `bottom` is the physically right one for a
 floor-plane camera once you raise `--min-crossing-frames`.
 
+## Upstream
+
+The `tracker_id >= 0` filter in `Counter.track` works around supervision
+treating every unconfirmed track (id -1) as one shared track, which
+inflated the sample count to 97 / 95:
+[roboflow/supervision#2578](https://github.com/roboflow/supervision/issues/2578).
+The fix, a guard in `LineZone.trigger`, is in
+[#2579](https://github.com/roboflow/supervision/pull/2579).
+
 ## Known limitations
 
 - **One clip.** These numbers come from a single overhead concourse clip. A
